@@ -1,10 +1,8 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    int arr[]={1,2,3,4,5,6};
+void convert(int arr[],int m,int n){
     int mat[2][3];
-    int m=2,n=3;
     int k=0;
 
     for(int i=0;i<m;i++){
@@ -19,5 +17,11 @@ int main(){
         }
         cout<<endl;
     }
+}
+
+int main(){
+    int arr[]={1,2,3,4,5,6};
+    convert(arr, 2, 3);
+    
     return 0;
 }
